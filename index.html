@@ -7,73 +7,73 @@
     <title>Document</title>
     <script>
         function appendRow(){
-    let cell,firstRow,row;
-  let table=document.getElementById("tbl");
-  var fname = document.getElementById('fname').value;
-  var lname = document.getElementById('lname').value;
-  var city = document.getElementById('city').value;
-  var country = document.getElementById('country').value;
+        let cell,firstRow,row;
+        let table=document.getElementById("tbl");
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var city = document.getElementById('city').value;
+        var country = document.getElementById('country').value;
   
 
-  firstRow=table.rows[0];
-  row=table.insertRow(-1);
-  row.className="tr";
-  cell=row.insertCell(-1);
-  cell.innerHTML=(table.rows.length-1);
-  for (let i=1;i<firstRow.cells.length;i++){
-    cell=row.insertCell(-1)
-    switch (i){
-      case 1:
-        cell.innerHTML=fname;
-        break;
-      case 2:
-        cell.innerHTML=lname;
-        break;
-      case 3:
-        cell.innerHTML=city;
-        break;  
-      case 4:
-        cell.innerHTML=country;
-        break;        
-    }
-  }  
-}
-function appendRowTop(){
-    let cell,firstRow,row;
-    var fname = document.getElementById('fname').value;
-    var lname = document.getElementById('lname').value;
-    var city = document.getElementById('city').value;
-    var country = document.getElementById('country').value;
-  
-  
-    let table=document.getElementById("tbl");
-  firstRow=table.rows[0];
-  row=table.insertRow(1);
-  row.className="tr";
-  cell=row.insertCell(-1);
-  cell.innerHTML="1";
-  for (let i=1;i<firstRow.cells.length;i++){
-    cell=row.insertCell(-1)
-    switch (i){
-      case 1:
-        cell.innerHTML=fname;
-        break;
-      case 2:
-        cell.innerHTML=lname;
-        break;
-      case 3:
-        cell.innerHTML=city;
-        break;  
-      case 4:
-        cell.innerHTML=country;
-        break;        
-    }
+        firstRow=table.rows[0];
+        row=table.insertRow(-1);
+        row.className="tr";
+        cell=row.insertCell(-1);
+        cell.innerHTML=(table.rows.length-1);
+        for (let i=1;i<firstRow.cells.length;i++){
+            cell=row.insertCell(-1)
+            switch (i){
+            case 1:
+                cell.innerHTML=fname;
+                break;
+            case 2:
+                cell.innerHTML=lname;
+                break;
+            case 3:
+                cell.innerHTML=city;
+                break;  
+            case 4:
+                cell.innerHTML=country;
+                break;        
+            }
+        }  
+        }
+        function appendRowTop(){
+        let cell,firstRow,row;
+        var fname = document.getElementById('fname').value;
+        var lname = document.getElementById('lname').value;
+        var city = document.getElementById('city').value;
+        var country = document.getElementById('country').value;
+    
+    
+        let table=document.getElementById("tbl");
+        firstRow=table.rows[0];
+        row=table.insertRow(1);
+        row.className="tr";
+        cell=row.insertCell(-1);
+        cell.innerHTML="1";
+        for (let i=1;i<firstRow.cells.length;i++){
+            cell=row.insertCell(-1)
+            switch (i){
+            case 1:
+                cell.innerHTML=fname;
+                break;
+            case 2:
+                cell.innerHTML=lname;
+                break;
+            case 3:
+                cell.innerHTML=city;
+                break;  
+            case 4:
+                cell.innerHTML=country;
+                break;        
+            }
 
-  } 
-  for (let i=2;i<table.rows.length;i++){
-    table.rows[i].cells[0].innerHTML=i;
-  }
-}
+        } 
+        for (let i=2;i<table.rows.length;i++){
+            table.rows[i].cells[0].innerHTML=i;
+        }
+        }
     </script>
 </head>
 <body>
